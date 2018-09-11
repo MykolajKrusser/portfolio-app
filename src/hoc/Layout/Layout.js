@@ -6,15 +6,15 @@ import classes from './Layout.css'
 
 class Layout extends Component {
     state={
-        navShow: true,
+        navShow: false,
         menuBtnActive: null
     }
     menuBtnHandler = ()=>{
-        if(this.state.navShow){
-            this.setState({menuBtnActive: 'Active'})
+        if(!this.state.navShow){
+            this.setState({menuBtnActive: 'Active', navShow: true})
         }
         if(this.state.menuBtnActive === 'Active'){
-            this.setState({menuBtnActive: null})
+            this.setState({menuBtnActive: null, navShow: false})
         }
     }
     render(){
