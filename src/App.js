@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Wrap from './hoc/Wrap/Wrap'
+import Layout from './hoc/Layout/Layout'
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      hello
-      </div>
+      <Wrap>
+        <Layout>
+            Some thing there
+        </Layout>
+      </Wrap>
     );
   }
 }

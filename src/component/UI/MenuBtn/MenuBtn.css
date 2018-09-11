@@ -1,0 +1,42 @@
+.Ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  .HamRotate.Active {
+    transform: rotate(45deg);
+  }
+  .HamRotate180.Active {
+    transform: rotate(180deg);
+  }
+  .Line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .Ham3 .Top {
+    stroke-dasharray: 40 130;
+  }
+  .Ham3 .Middle {
+    stroke-dasharray: 40 140;
+  }
+  .Ham3 .Bottom {
+    stroke-dasharray: 40 205;
+  }
+  .Ham3.Active .Top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .Ham3.Active .Middle {
+    stroke-dashoffset: -102px;
+  }
+  .Ham3.Active .Bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+  }
