@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Wrap from '../Wrap/Wrap'
-import Nav from '../../component/Navigation/Navigation'
+import Navigation from '../../component/Navigation/Navigation'
 import MenuBtn from '../../component/UI/MenuBtn/MenuBtn'
 import classes from './Layout.css'
 
@@ -20,10 +20,10 @@ class Layout extends Component {
     render(){
         return (
             <Wrap>
-                <MenuBtn 
+                <MenuBtn
                     clicked={this.menuBtnHandler}
                     btnActive={this.state.menuBtnActive}/>
-                {this.state.navShow ? <Nav/> : null}
+                <Navigation navShow={this.state.navShow} />
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
