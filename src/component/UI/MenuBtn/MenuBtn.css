@@ -11,12 +11,6 @@
     right: 0;
     z-index: 999;
 }
-.HamRotate.Active {
-  transform: rotate(45deg);
-}
-.HamRotate180.Active {
-  transform: rotate(180deg);
-}
 .Line {
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
