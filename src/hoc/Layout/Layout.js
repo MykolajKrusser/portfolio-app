@@ -1,8 +1,10 @@
-import React, {Component} from 'react'
-import Wrap from '../Wrap/Wrap'
-import Navigation from '../../component/Navigation/Navigation'
-import MenuBtn from '../../component/UI/MenuBtn/MenuBtn'
-import classes from './Layout.css'
+import React, {Component} from 'react';
+import Wrap from '../Wrap/Wrap';
+import Navigation from '../../component/Navigation/Navigation';
+import MenuBtn from '../../component/UI/MenuBtn/MenuBtn';
+
+
+import classes from './Layout.css';
 
 class Layout extends Component {
     state={
