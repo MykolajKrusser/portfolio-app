@@ -25,7 +25,9 @@ class Layout extends Component {
                 <MenuBtn
                     clicked={this.menuBtnHandler}
                     btnActive={this.state.menuBtnActive}/>
-                <Navigation navShow={this.state.navShow} />
+                <Navigation 
+                    navShow={this.state.navShow}
+                    clicked={this.menuBtnHandler}/>
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
