@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Wrap from '../Wrap/Wrap';
 import Navigation from '../../component/Navigation/Navigation';
 import MenuBtn from '../../component/UI/MenuBtn/MenuBtn';
+import Background from '../../component/UI/Background/Background';
 
 
 import classes from './Layout.css';
@@ -22,6 +23,7 @@ class Layout extends Component {
     render(){
         return (
             <Wrap>
+                <Background/>
                 <MenuBtn
                     clicked={this.menuBtnHandler}
                     btnActive={this.state.menuBtnActive}/>
