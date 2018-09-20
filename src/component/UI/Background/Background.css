@@ -1,234 +1,85 @@
-.BgImage {
+.Background {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(1000px at 75% -75%, rgba(238, 37, 9, 0.6), rgba(250, 125, 69, 0.1));
     position: absolute;
-    background: #efdfe4;
-    background-size: cover;
-    background-position: top;
-    -webkit-filter: grayscale(70%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%);
-    z-index: -999;
-}
-  
-.BlobCont {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+    overflow: hidden;
     z-index: -1;
 }
   
-.Blob:nth-child(1) {
-    animation: move1 20s infinite linear;
+@-webkit-keyframes blink {
+    0% {
+      border: 0px solid rgba(255, 255, 255, 0);
+      background: white;
+      -webkit-transform: rotate(0deg) scale(0.25);
+              transform: rotate(0deg) scale(0.25);
+    }
+    25% {
+      border: 200px solid white;
+      background: rgba(255, 255, 255, 0);
+      -webkit-transform: rotate(360deg) scale(1) skew(5deg);
+              transform: rotate(360deg) scale(1) skew(5deg);
+    }
+    100% {
+      border: 0px solid rgba(255, 255, 255, 0);
+      background: white;
+      -webkit-transform: rotate(0deg) scale(0.25);
+              transform: rotate(0deg) scale(0.25);
+    }
 }
   
-@keyframes move1 {
-    from {
-      transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
+@keyframes blink {
+    0% {
+      border: 0px solid rgba(255, 255, 255, 0);
+      background: white;
+      -webkit-transform: rotate(0deg) scale(0.25);
+              transform: rotate(0deg) scale(0.25);
     }
-    to {
-      transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+    25% {
+      border: 200px solid white;
+      background: rgba(255, 255, 255, 0);
+      -webkit-transform: rotate(360deg) scale(1) skew(5deg);
+              transform: rotate(360deg) scale(1) skew(5deg);
     }
-}
-.Blob:nth-child(2) {
-    animation: move2 20s infinite linear;
-}
-  
-@keyframes move2 {
-    from {
-      transform: rotate(180deg) translate(200px, 0.1px) rotate(-180deg);
-    }
-    to {
-      transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-    }
-}
-.Blob:nth-child(3) {
-    animation: move3 20s infinite linear;
-}
-  
-@keyframes move3 {
-    from {
-      transform: rotate(270deg) translate(200px, 0.1px) rotate(-270deg);
-    }
-    to {
-      transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
+    100% {
+      border: 0px solid rgba(255, 255, 255, 0);
+      background: white;
+      -webkit-transform: rotate(0deg) scale(0.25);
+              transform: rotate(0deg) scale(0.25);
     }
 }
-.Blob:nth-child(4) {
-    animation: move4 20s infinite linear;
+.Circle {
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    position: absolute;
+    top: -360px;
+    right: -222px;
+    -webkit-transform-origin: 75% 50%;
+            transform-origin: 75% 50%;
+    -webkit-animation: blink 15s infinite ease-in-out;
+            animation: blink 15s infinite ease-in-out;
 }
   
-@keyframes move4 {
-    from {
-      transform: rotate(360deg) translate(200px, 0.1px) rotate(-360deg);
-    }
-    to {
-      transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-    }
-}
-.Blob:nth-child(5) {
-    animation: move5 20s infinite linear;
+.Circle:nth-child(2) {
+    height: 790px;
+    width: 790px;
+    animation: blink 15s infinite 1s ease-in-out reverse;
 }
   
-@keyframes move5 {
-    from {
-      transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
-    }
-    to {
-      transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-    }
-}
-.Blob:nth-child(6) {
-    animation: move6 20s infinite linear;
+.Circle:nth-child(3) {
+    height: 795px;
+    width: 795px;
+    -webkit-animation: blink 15s infinite 1.5s ease-in-out;
+            animation: blink 15s infinite 1.5s ease-in-out;
 }
   
-@keyframes move6 {
-    from {
-      transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
-    }
-    to {
-      transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-    }
-}
-.Blob:nth-child(7) {
-    animation: move7 20s infinite linear;
+.Date {
+    padding-top: 25px;
+    font-family: 'Open Sans 400', sans-serif;
+    font-style: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #bcbcbc;
 }
   
-@keyframes move7 {
-    from {
-      transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
-    }
-    to {
-      transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-    }
-}
-.Blob:nth-child(8) {
-    animation: move8 20s infinite linear;
-}
-  
-@keyframes move8 {
-    from {
-      transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
-    }
-    to {
-      transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-    }
-}
-.Blob:nth-child(9) {
-    animation: move9 20s infinite linear;
-}
-  
-@keyframes move9 {
-    from {
-      transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
-    }
-    to {
-      transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-    }
-}
-.Blob:nth-child(10) {
-    animation: move10 20s infinite linear;
-}
-  
-@keyframes move10 {
-    from {
-      transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
-    }
-    to {
-      transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-    }
-}
-.Blob:nth-child(11) {
-    animation: move11 20s infinite linear;
-}
-  
-@keyframes move11 {
-    from {
-      transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
-    }
-    to {
-      transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-    }
-}
-.Blob:nth-child(12) {
-    animation: move12 20s infinite linear;
-}
-  
-@keyframes move12 {
-    from {
-      transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
-    }
-    to {
-      transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-    }
-}
-.Blob:nth-child(13) {
-    animation: move13 20s infinite linear;
-}
-  
-@keyframes move13 {
-    from {
-      transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
-    }
-    to {
-      transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-    }
-}
-.Blob:nth-child(14) {
-    animation: move14 20s infinite linear;
-}
-  
-@keyframes move14 {
-    from {
-      transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
-    }
-    to {
-      transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-    }
-}
-.Blob:nth-child(15) {
-    animation: move15 20s infinite linear;
-}
-  
-@keyframes move15 {
-    from {
-      transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
-    }
-    to {
-      transform: rotate(1710deg) translate(200px, 0.1px) rotate(-1710deg);
-    }
-}
-.Blob:nth-child(16) {
-    animation: move16 20s infinite linear;
-}
-  
-@keyframes move16 {
-    from {
-      transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
-    }
-    to {
-      transform: rotate(1800deg) translate(200px, 0.1px) rotate(-1800deg);
-    }
-}
-.Blob:nth-child(17) {
-    animation: move17 20s infinite linear;
-}
-  
-@keyframes move17 {
-    from {
-      transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
-    }
-    to {
-      transform: rotate(1890deg) translate(200px, 0.1px) rotate(-1890deg);
-    }
-}
-.Blob:nth-child(18) {
-    animation: move18 20s infinite linear;
-}
-  
-@keyframes move18 {
-    from {
-      transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
-    }
-    to {
-      transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
-    }
-}  
