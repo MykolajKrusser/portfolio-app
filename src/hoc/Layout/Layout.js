@@ -26,10 +26,12 @@ class Layout extends Component {
                 <Background/>
                 <MenuBtn
                     clicked={this.menuBtnHandler}
-                    btnActive={this.state.menuBtnActive}/>
+                    btnActive={this.state.menuBtnActive}
+                />
                 <Navigation 
                     navShow={this.state.navShow}
-                    clicked={this.menuBtnHandler}/>
+                    clicked={this.menuBtnHandler}
+                />
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>

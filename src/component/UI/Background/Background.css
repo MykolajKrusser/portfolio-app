@@ -73,13 +73,3 @@
     -webkit-animation: blink 15s infinite 1.5s ease-in-out;
             animation: blink 15s infinite 1.5s ease-in-out;
 }
-  
-.Date {
-    padding-top: 25px;
-    font-family: 'Open Sans 400', sans-serif;
-    font-style: 400;
-    font-size: 13px;
-    text-align: center;
-    color: #bcbcbc;
-}
-  
