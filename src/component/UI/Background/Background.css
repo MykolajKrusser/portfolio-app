@@ -1,49 +1,28 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: radial-gradient(1000px at 75% -75%, rgba(238, 37, 9, 0.6), rgba(250, 125, 69, 0.1));
+    background: radial-gradient(1400px at 75% 0%, rgba(57, 136, 225, 0.8), rgba(227, 244, 253, 0.1));
     position: absolute;
     overflow: hidden;
     z-index: -1;
 }
   
-@-webkit-keyframes blink {
-    0% {
-      border: 0px solid rgba(255, 255, 255, 0);
-      background: white;
-      -webkit-transform: rotate(0deg) scale(0.25);
-              transform: rotate(0deg) scale(0.25);
-    }
-    25% {
-      border: 200px solid white;
-      background: rgba(255, 255, 255, 0);
-      -webkit-transform: rotate(360deg) scale(1) skew(5deg);
-              transform: rotate(360deg) scale(1) skew(5deg);
-    }
-    100% {
-      border: 0px solid rgba(255, 255, 255, 0);
-      background: white;
-      -webkit-transform: rotate(0deg) scale(0.25);
-              transform: rotate(0deg) scale(0.25);
-    }
-}
-  
 @keyframes blink {
     0% {
-      border: 0px solid rgba(255, 255, 255, 0);
-      background: white;
+      border: 0px solid white;
+      background: rgb(255, 255, 255 0.5);
       -webkit-transform: rotate(0deg) scale(0.25);
               transform: rotate(0deg) scale(0.25);
     }
     25% {
-      border: 200px solid white;
-      background: rgba(255, 255, 255, 0);
+      border: 200px solid whitesmoke;
+      background: rgba(255, 255, 255 0.8);
       -webkit-transform: rotate(360deg) scale(1) skew(5deg);
               transform: rotate(360deg) scale(1) skew(5deg);
     }
     100% {
-      border: 0px solid rgba(255, 255, 255, 0);
-      background: white;
+      border: 0px solid rgba(103, 163, 232, 0.6);
+      background: rgba(103, 163, 232, 0.6);;
       -webkit-transform: rotate(0deg) scale(0.25);
               transform: rotate(0deg) scale(0.25);
     }

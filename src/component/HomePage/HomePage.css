@@ -1,4 +1,18 @@
 .HomePage{
     height: 90vh;
     border: 1px black solid;
+    z-index: 1;
+    animation: anim 2s;
+    
+}
+
+@keyframes anim {
+    from {
+        transform: translateX(-50%) scale(0.2) rotateY(130deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) scale(1) rotateY(0deg);
+        opacity: 1;
+    }
 }
