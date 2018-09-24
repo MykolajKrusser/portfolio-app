@@ -4,7 +4,13 @@
     animation: in 3s;
     text-align: center;
 }
-  
+.HomePage h1{
+    margin-top: 180px;
+}
+.HomePage article{
+    margin: 30px auto;
+    width: 80%;
+}
 
 @keyframes in {
     from {
