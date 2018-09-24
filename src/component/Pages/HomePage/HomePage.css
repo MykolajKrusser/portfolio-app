@@ -1,12 +1,12 @@
 .HomePage{
     height: 90vh;
-    border: 1px black solid;
     z-index: 1;
-    animation: anim 2s;
-    
+    animation: in 3s;
+    text-align: center;
 }
+  
 
-@keyframes anim {
+@keyframes in {
     from {
         transform: translateX(-50%) scale(0.2) rotateY(130deg);
         opacity: 0;
