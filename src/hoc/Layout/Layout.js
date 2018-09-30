@@ -10,7 +10,7 @@ import classes from './Layout.css';
 class Layout extends Component {
     state={
         navShow: false,
-        menuBtnActive: null
+        menuBtnActive: null,
     }
     menuBtnHandler = ()=>{
         if(!this.state.navShow){

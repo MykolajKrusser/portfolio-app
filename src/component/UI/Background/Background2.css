@@ -30,15 +30,54 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    transform: translate(0px, -145px);
     z-index: -2;
     animation: rotation 5s infinite linear;
 }
+
+.Rect:nth-child(2){
+    width: 30px;
+    height: 300px;
+    background: black;
+    animation: rotation 4s infinite linear;
+}
+
+.Rect:nth-child(3){
+    width: 35px;
+    height: 250px;
+    background: green;
+    animation: rotation 6s infinite ease-in;
+}
+.Rect:nth-child(4){
+    width: 45px;
+    height: 222px;
+    background: blue;
+    animation: rotation2 7s infinite ease;
+}
+.Rect:nth-child(5){
+    width: 25px;
+    height: 180px;
+    background: yellowgreen;
+    animation: rotation2 4s infinite ease;
+}
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: rotate(0deg) scale(1);
     }
-    to {
-        transform: rotate(359deg);
+    50% {
+        transform: rotate(180deg) scale(1.3);
+    }
+    100% {
+        transform: rotate(359deg) scale(1);
+    }
+}
+@keyframes rotation2 {
+    0% {
+        transform: rotate(359deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.3);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
     }
 }
