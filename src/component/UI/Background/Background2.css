@@ -1,0 +1,44 @@
+.Background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #bbbbbb 15%,#c7d0cb 37%,#c7d0cb 37%,#cecece 64%,#bbbbbb 79%);
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.RedDot{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: red;
+    border-radius: 50%;
+}
+
+.Rect{
+    width: 50px;
+    height: 200px;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(0px, -145px);
+    z-index: -2;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

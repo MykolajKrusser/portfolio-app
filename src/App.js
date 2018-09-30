@@ -4,7 +4,7 @@ import Wrap from './hoc/Wrap/Wrap'
 import Layout from './hoc/Layout/Layout'
 import HomePage from './component/Pages/HomePage/HomePage';
 import AboutMe from './component/Pages/AboutMe/AboutMe';
-import MyWorks from './component/Pages/MyWorks/MyWorks';
+import MyWorks from './container/MyWorks/MyWorks';
 
 class App extends Component {
   render() {
