@@ -5,6 +5,7 @@
     position: absolute;
     overflow: hidden;
     z-index: -1;
+    filter: blur(1px);
 }
 
 .RedDot{
@@ -57,7 +58,7 @@
     width: 25px;
     height: 180px;
     background: yellowgreen;
-    animation: rotation2 4s infinite ease;
+    animation: rotation2 4s infinite linear;
 }
 @keyframes rotation {
     0% {

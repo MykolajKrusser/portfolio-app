@@ -3,6 +3,7 @@ import classes from './HomePage.css';
 
 const homePage = (props)=>(
     <section className={classes.HomePage}>
+     <div className={classes.BlurredBox}></div>
         <h1>I am Mykolaj Krusser</h1>
         <article>
             <p>
@@ -18,6 +19,7 @@ const homePage = (props)=>(
             and JavaScript offers me endless fascinating possibilities in devising just the right solution.
             </p>
         </article>
+       
     </section>
 );
 
