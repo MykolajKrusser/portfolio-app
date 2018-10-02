@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from './AboutMe.css';
+import Background from '../../UI/Background/Background';
 
 const aboutMe = (props)=>(
     <section className={classes.AboutMe}>
+    <Background/>
         <h1>About me</h1>
         <article>
             Lorem Ipsum is simply dummy text of the printing 

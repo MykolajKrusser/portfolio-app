@@ -1,8 +1,10 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: radial-gradient(1400px at 75% 0%, rgba(57, 136, 225, 0.8), rgba(227, 244, 253, 0.1));
+    background: radial-gradient(1400px at 75% 0%, rgba(57, 136, 225, 1), rgba(227, 244, 253, 1));
     position: absolute;
+    width: inherit;
+    height: inherit;
     overflow: hidden;
     z-index: -1;
 }
@@ -10,7 +12,7 @@
 @keyframes blink {
     0% {
       border: 0px solid white;
-      background: rgb(255, 255, 255 0.5);
+      background: rgba(255, 255, 255 0.5);
       -webkit-transform: rotate(0deg) scale(0.25);
               transform: rotate(0deg) scale(0.25);
     }
