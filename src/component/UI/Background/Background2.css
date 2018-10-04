@@ -1,11 +1,11 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: linear-gradient(135deg, #bbbbbb 15%,#c7d0cb 37%,#c7d0cb 37%,#cecece 64%,#bbbbbb 79%);
+    background: linear-gradient(135deg, #bbbbbb 15%,#c7d0cb 37%,#c7d0cb 37%,#cecece 64%,#bbbbbb 79%); 
     position: absolute;
-    overflow: hidden;
     z-index: -1;
     filter: blur(1px);
+    overflow: hidden;
 }
 
 .RedDot{

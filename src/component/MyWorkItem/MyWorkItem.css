@@ -1,8 +1,9 @@
 .Col{
-    width: calc(50% - 2rem);
+    width: calc(49.9% - 2rem);
     margin: 1rem;
+    overflow: hidden;
 }
-  
+
 .Container{
     transform-style: preserve-3d;
     perspective: 1000px;
