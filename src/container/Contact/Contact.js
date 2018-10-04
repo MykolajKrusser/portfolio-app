@@ -7,7 +7,7 @@ class Contact extends Component{
     }
     render(){
         return(
-            <section>
+            <section className={classes.Contact}>
                 Contact
             </section>
         );

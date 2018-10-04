@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Wrap from '../Wrap/Wrap';
 import Navigation from '../../component/Navigation/Navigation';
 import MenuBtn from '../../component/UI/MenuBtn/MenuBtn';
-import Background from '../../component/UI/Background/Background2';
+import Background from '../../component/UI/Background/BackgroundMain';
 
 
 import classes from './Layout.css';
