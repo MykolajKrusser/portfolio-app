@@ -13,7 +13,7 @@ const nav = (props) => (
         <NavigationItem closeNav={props.clicked} link='/' exact>Home</NavigationItem>
         <NavigationItem closeNav={props.clicked} link='/about-me'>About me</NavigationItem>
         <NavigationItem closeNav={props.clicked} link='/my-works'>My works</NavigationItem>
-        <a>Link 1</a>
+        <NavigationItem closeNav={props.clicked} link='/contact'>Contact me</NavigationItem>
     </nav>
 );
 

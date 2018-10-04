@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     animation: in 3s cubic-bezier(0.4, 0.2, 0.2, 1);
-    background: green
+    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
 }
 
 @keyframes in {
