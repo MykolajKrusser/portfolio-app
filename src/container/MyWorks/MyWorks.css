@@ -8,11 +8,11 @@
 
 @keyframes in {
     from {
-        transform: translateX(-50%) scale(0.2) rotateY(130deg);
+        transform: translateY(-50%) scale(0.2) rotateX(90deg);
         opacity: 0;
     }
     to {
-        transform: translateX(0) scale(1) rotateY(0deg);
+        transform: translateY(0) scale(1) rotateX(0deg);
         opacity: 1;
     }
 }

@@ -1,6 +1,6 @@
 .Col{
-    width: calc(49.9% - 2rem);
-    margin: 1rem;
+    width: calc(49.9% - 2.6rem);
+    margin: 1.3rem;
     overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
     border-radius: 10px;
     color: #fff;
     font-size: 1.5rem;
-  }
+}
   
 .Back{
     background: #cedce7;

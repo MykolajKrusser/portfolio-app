@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Wrap from './hoc/Wrap/Wrap'
-import Layout from './hoc/Layout/Layout'
+import Layout from './hoc/Layout/Layout';
 import HomePage from './component/Pages/HomePage/HomePage';
 import AboutMe from './component/Pages/AboutMe/AboutMe';
 import MyWorks from './container/MyWorks/MyWorks';
@@ -10,7 +9,6 @@ import Contact from './container/Contact/Contact';
 class App extends Component {
   render() {
     return (
-      <Wrap>
         <Layout>
           <Switch>
           <Route path='/contact' component={Contact}/>
@@ -19,7 +17,6 @@ class App extends Component {
             <Route path='/' exact component={HomePage}/>
           </Switch>
         </Layout>
-      </Wrap>
     );
   }
 }

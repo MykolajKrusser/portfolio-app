@@ -30,11 +30,14 @@
 .Ham3.Active .Top {
   stroke-dasharray: 75 130;
   stroke-dashoffset: -63px;
+  stroke:white;
 }
 .Ham3.Active .Middle {
   stroke-dashoffset: -102px;
+  stroke:white;
 }
 .Ham3.Active .Bottom {
   stroke-dasharray: 110 205;
   stroke-dashoffset: -86px;
+  stroke:white;
 }
