@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import Wrap from '../Wrap/Wrap';
 import Navigation from '../../component/Navigation/Navigation';
 import MenuBtn from '../../component/UI/MenuBtn/MenuBtn';
-import Background from '../../component/UI/Background/BackgroundMain';
-
-
+import BackgroundMain from '../../component/UI/Background/BackgroundMain';
 import classes from './Layout.css';
 
 class Layout extends Component {
@@ -12,6 +10,7 @@ class Layout extends Component {
         navShow: false,
         menuBtnActive: null,
     }
+
     menuBtnHandler = ()=>{
         if(!this.state.navShow){
             this.setState({menuBtnActive: 'Active', navShow: true})
@@ -20,10 +19,11 @@ class Layout extends Component {
             this.setState({menuBtnActive: null, navShow: false})
         }
     }
+    
     render(){
         return (
             <Wrap>
-                <Background/>
+                <BackgroundMain/>
                 <MenuBtn
                     clicked={this.menuBtnHandler}
                     btnActive={this.state.menuBtnActive}

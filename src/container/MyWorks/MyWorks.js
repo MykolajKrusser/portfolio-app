@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from '../../axios';
 import classes from './MyWorks.css';
 import MyWorkItem from '../../component/MyWorkItem/MyWorkItem';
 
@@ -10,7 +11,7 @@ class MyWorks extends Component{
                 git: 'https://github.com/MykolajKrusser',
                 live: 'https://google.com',
                 description:'an app to create a burger from individual ingredients, send an order to the server, and view a list of orders.',
-                category: ['react'] 
+                category: ['react']
             },
             { id: 2, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 background: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-42a16.appspot.com/o/works_img%2Fbg.jpg?alt=media&token=71bb647b-a02c-4dd4-b850-427c98681cce',
@@ -28,12 +29,12 @@ class MyWorks extends Component{
             { id: 4, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 links: 'www',
                 description:'Default layout use only css html.',
-                category: ['css']
+                category: ['html']
             },
             { id: 5, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 links: 'www',
                 description:'Default layout use only css html.',
-                category: ['css']
+                category: ['react']
             },
             { id: 6, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 links: 'www',
@@ -42,6 +43,17 @@ class MyWorks extends Component{
             }
         ]
     }
+
+    componentDidMount(){
+       axios.get('https://burger-app-4c52d.firebaseio.com/ingredients.json')
+         .then(respons=>{
+             this.setState({ingredients: respons.data})
+         })
+         .catch(error=>{
+             this.setState({error: true})
+         });
+    }
+
     render(){
         const myWorksList = this.state.works.map(
             work => {
@@ -56,13 +68,13 @@ class MyWorks extends Component{
                     key={work.id}/>
             }
         )
-        
+
         return(
             <section className={classes.Cols}>
                 {myWorksList}
             </section>
         );
     }
-} 
+}
 
 export default MyWorks;
