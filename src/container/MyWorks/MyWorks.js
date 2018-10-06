@@ -7,19 +7,21 @@ class MyWorks extends Component{
         works: [
             { id: 1, title: 'Burger-builder', prevTitle: 'React app to create a burger.',
                 background: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-42a16.appspot.com/o/works_img%2F698137.jpg?alt=media&token=3061d5c3-6ff5-440f-b210-1de291fd80f3',
-                links: 'www',
+                git: 'https://github.com/MykolajKrusser',
+                live: 'https://google.com',
                 description:'an app to create a burger from individual ingredients, send an order to the server, and view a list of orders.',
                 category: ['react'] 
             },
             { id: 2, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 background: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-42a16.appspot.com/o/works_img%2Fbg.jpg?alt=media&token=71bb647b-a02c-4dd4-b850-427c98681cce',
-                links: 'www',
+                git: 'https://github.com/MykolajKrusser',
+                live: 'https://google.com',
                 description:'Default layout use only css html.',
                 category: ['css']
             },
             { id: 3, title: 'html page', prevTitle: 'Layout html, css, adaptive.',
                 background: 'https://firebasestorage.googleapis.com/v0/b/myportfolio-42a16.appspot.com/o/works_img%2Fdevushki-stirka-dom-sobaka-bele-freier-evgenii.jpg?alt=media&token=8bd38c1a-d5b0-48a8-b6f7-31e9249eb13b',
-                links: 'www',
+                links: 'https://github.com/MykolajKrusser',
                 description:'Default layout use only css html.',
                 category: ['css']
             },
@@ -48,7 +50,8 @@ class MyWorks extends Component{
                     prevTitle={work.prevTitle}
                     description={work.description}
                     category={work.category}
-                    links={work.links}
+                    git={work.git}
+                    live={work.live}
                     background={work.background}
                     key={work.id}/>
             }

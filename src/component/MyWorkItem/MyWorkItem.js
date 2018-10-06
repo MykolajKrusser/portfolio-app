@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './MyWorkItem.css';
+import AnchorFlip from '../UI/AnchorFlip/AnchorFlip';
 
 const mywork = (props)=>(
         <div className={classes.Col}>
@@ -13,6 +14,10 @@ const mywork = (props)=>(
                 <div className={classes.Back}>
                     <div className={classes.Inner}>
                       <p>{props.description}</p>
+                      <div>
+                          <AnchorFlip live={props.live}>LIVE!</AnchorFlip>
+                          <AnchorFlip git={props.git}>GitHub</AnchorFlip>
+                      </div>
                     </div>
                 </div>
             </div>

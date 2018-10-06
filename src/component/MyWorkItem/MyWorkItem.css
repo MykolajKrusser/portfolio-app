@@ -55,6 +55,8 @@
 }
   
 .Inner{
+    display: flex;
+    flex-direction: column;
     transform: translateY(-50%) translateZ(60px) scale(0.94);
     top: 50%;
     position: absolute;
@@ -64,6 +66,14 @@
     outline: 1px solid transparent;
     perspective: inherit;
     z-index: 2;
+}
+.Inner div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Inner div a{
+    margin: 0 15px;
 }
   
 .Container .Back{
