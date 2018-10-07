@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import axios from '../../axios';
 import classes from './MyWorks.css';
 import MyWorkItem from '../../component/MyWorkItem/MyWorkItem';
+import errorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class MyWorks extends Component{
     state = {
-        works: []
+        works: [],
     }
     
     componentDidMount(){
@@ -41,4 +42,4 @@ class MyWorks extends Component{
     }
 }
 
-export default MyWorks;
+export default errorHandler(MyWorks, axios);
