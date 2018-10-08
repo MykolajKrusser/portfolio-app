@@ -3,7 +3,7 @@ import classes from './MenuBtn.css'
 
 const menuBtn = (props)=>{
     return(
-       <svg className={[classes.Ham, classes.Ham3, classes[props.btnActive]].join(' ')} viewBox="0 0 100 100" style={{width:"80"}}  onClick={props.clicked}>
+       <svg className={[classes.Ham, classes.Ham3, classes[props.btnActive]].join(' ')} viewBox="0 0 100 100" style={{width:"100"}}  onClick={props.clicked}>
                 <path
                         className={[classes.Line, classes.Top].join(' ')}
                         d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />

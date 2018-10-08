@@ -1,7 +1,7 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: radial-gradient(1400px at 75% 0%, rgba(57, 136, 225, 1), rgba(227, 244, 253, 1));
+    background: radial-gradient(1400px at 75% 0%, rgba(120, 144, 156, 1), rgba(227, 244, 253, 1));
     position: absolute;
     width: inherit;
     height: inherit;
@@ -11,20 +11,20 @@
   
 @keyframes blink {
     0% {
-      border: 0px solid white;
-      background: rgba(255, 255, 255 0.5);
+      border: 0px solid rgba(236, 239, 241, .6);
+      background: rgba(96, 125, 139, .6);
       -webkit-transform: rotate(0deg) scale(0.25);
               transform: rotate(0deg) scale(0.25);
     }
     25% {
-      border: 200px solid whitesmoke;
-      background: rgba(255, 255, 255 0.8);
+      border: 200px solid rgba(236, 239, 241, .6);
+      background: rgba(96, 125, 139, .6);
       -webkit-transform: rotate(360deg) scale(1) skew(5deg);
               transform: rotate(360deg) scale(1) skew(5deg);
     }
     100% {
-      border: 0px solid rgba(103, 163, 232, 0.6);
-      background: rgba(103, 163, 232, 0.6);;
+      border: 0px solid rgba(236, 239, 241, .6);
+      background: rgba(96, 125, 139, .6);
       -webkit-transform: rotate(0deg) scale(0.25);
               transform: rotate(0deg) scale(0.25);
     }
@@ -34,7 +34,7 @@
     width: 800px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 0px 0px 65px 14px rgba(103, 163, 232, 0.46);
+    box-shadow: 0px 0px 65px 14px rgba(96, 125, 139, .5);
     top: -360px;
     right: -222px;
     -webkit-transform-origin: 75% 50%;

@@ -6,7 +6,7 @@ import errorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class MyWorks extends Component{
     state = {
-        works: [],
+        works: []
     }
     
     componentDidMount(){
