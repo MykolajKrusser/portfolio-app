@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: in 3s cubic-bezier(0.4, 0.2, 0.2, 1);
+    animation: in 3s ease-in;
     background: linear-gradient(45deg,  #cedce7 1%,#596a72 100%);
 }
 
