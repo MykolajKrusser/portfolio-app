@@ -1,0 +1,52 @@
+.Socials {
+    margin:50px auto;
+    padding:0;
+    display:flex;
+}
+  
+.Socials li {
+    list-style: none;
+}
+  
+.Socials li a {
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+  
+.Socials li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+  
+.Socials li a .Icon {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+}
+  
+.Socials li:nth-child(1) a:hover .Icon {
+    color: #3b5998;
+}
+  
+.Socials li:nth-child(2) a:hover .Icon {
+    color: #00aced;
+}
+  
+.Socials li:nth-child(3) a:hover .Icon {
+    color: #dd4b39;
+}

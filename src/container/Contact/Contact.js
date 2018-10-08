@@ -13,15 +13,15 @@ class Contact extends Component{
                     <ul>
                         <li>
                             <label htmlFor="input">Your name</label>
-                            <input name="input" type="text" placeholder="input"/>
+                            <input name="input" type="text" placeholder="Name"/>
                         </li>
                         <li>
                             <label htmlFor="input">Your e-mail</label>
-                            <input name="input" type="text" placeholder="input"/>
+                            <input name="input" type="text" placeholder="e-mail"/>
                         </li>
                         <li>
                             <label htmlFor="textarea">Label</label>
-                            <textarea name="input" type="text" placeholder="text"/>
+                            <textarea name="input" type="text" placeholder="Your messege"/>
                         </li>
                     </ul>
                     <input type="submit" name="submit" value="Send e-mail"/>

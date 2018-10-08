@@ -6,6 +6,7 @@ const AnchorFlip = (props) => (
         className={classes.Btnflip}
         href={[props.git, props.live].join(' ')}
         target="_blank"
+        rel="noopener noreferrer"
     >
         <span className={[classes.BtnflipItem, classes.Btnflip__front].join(' ')}>{props.children}</span>
 		<span className={[classes.BtnflipItem, classes.Btnflip__center].join(' ')}></span>

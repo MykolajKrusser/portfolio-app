@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Navigation.css';
 import NavigationItem from '../UI/NavigationItem/NavigationItem';
+import SocialsBlock from '../UI/SocialsBlock/SocialsBlock';
 
 const nav = (props) => (
     <nav
@@ -14,6 +15,7 @@ const nav = (props) => (
         <NavigationItem closeNav={props.clicked} link='/about-me'>About me</NavigationItem>
         <NavigationItem closeNav={props.clicked} link='/my-works'>My works</NavigationItem>
         <NavigationItem closeNav={props.clicked} link='/contact'>Contact me</NavigationItem>
+        <SocialsBlock/>
     </nav>
 );
 
