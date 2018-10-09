@@ -6,7 +6,7 @@ const homePage = (props)=>(
     <section className={classes.HomePage}>
         <BackgroundHome/>
         <div className={classes.Content}>
-            <h1>I am Mykolaj Krusser</h1>
+            <h1>I am Mykolaj Krusser {props.test}</h1>
             <article>
                 <p>
                     I am a creative front‑end developer.
