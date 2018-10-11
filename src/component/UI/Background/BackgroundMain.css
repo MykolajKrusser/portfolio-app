@@ -111,3 +111,34 @@
         transform: rotate(0deg) scale(1);
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .Rect{
+        animation: none;
+        transform: rotate(34deg)
+    }
+    .Rect:nth-child(2){
+        animation: none;
+        transform: rotate(64deg)
+    }
+    .Rect:nth-child(3){
+        animation: none;
+        transform: rotate(94deg)
+    }
+    .Rect:nth-child(4){
+        animation: none;
+        transform: rotate(124deg)
+    }
+    .Rect:nth-child(5){
+        animation: none;
+        transform: rotate(254deg)
+    }
+    .Rect:nth-child(6){
+        animation: none;
+        transform: rotate(320deg)
+    }
+    .Rect:nth-child(7){
+        animation: none;
+        transform: rotate(117deg)
+    }
+}

@@ -94,4 +94,45 @@
       transform: rotate(0deg);
     }
 }
-  
+
+@media screen and (max-width: 1024px){
+    .Waves {
+        animation: none;
+    }
+    .Waves:nth-child(2){
+        transform: rotate(27deg);
+    }
+    .Waves:nth-child(3){
+        transform: rotate(54deg);
+    }
+    .Waves:nth-child(4){
+        transform: rotate(89deg);
+    }
+    .Waves:nth-child(5){
+        transform: rotate(116deg);
+    }
+    .Waves:nth-child(6){
+        transform: rotate(143deg);
+    }
+    .Waves:nth-child(7){
+        transform: rotate(170deg);
+    }
+    .Waves:nth-child(8){
+        transform: rotate(197deg);
+    }
+    .Waves:nth-child(9){
+        transform: rotate(224deg);
+    }
+    .Waves:nth-child(10){
+        transform: rotate(251deg);
+    }
+    .Waves:nth-child(11){
+        transform: rotate(278deg);
+    }
+    .Waves:nth-child(12){
+        transform: rotate(320deg);
+    }
+    .Waves:nth-child(13){
+        transform: rotate(350deg);
+    }
+}
