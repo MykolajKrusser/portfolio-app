@@ -20,3 +20,18 @@
         opacity: 1;
     }
 }
+
+@keyframes inMob {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .AboutMe{
+        animation: inMob 2s;
+    }
+}
