@@ -46,7 +46,7 @@ class Contact extends Component{
     render(){
         return(
             <section className={classes.Contact}>
-                <form className={classes.Container} onSubmit={this.orderHandler}>
+                <form onSubmit={this.orderHandler}>
                     <h2>Contact me</h2>
                     <ul>
                         <li>

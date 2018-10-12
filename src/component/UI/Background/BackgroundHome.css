@@ -108,21 +108,6 @@
     .Waves:nth-child(4){
         transform: rotate(89deg);
     }
-    .Waves:nth-child(5){
-        transform: rotate(116deg);
-    }
-    .Waves:nth-child(6){
-        transform: rotate(143deg);
-    }
-    .Waves:nth-child(7){
-        transform: rotate(170deg);
-    }
-    .Waves:nth-child(8){
-        transform: rotate(197deg);
-    }
-    .Waves:nth-child(9){
-        transform: rotate(224deg);
-    }
     .Waves:nth-child(10){
         transform: rotate(251deg);
     }
