@@ -29,4 +29,10 @@
     .Navigation{
         transition: none;
     }
+    .NavigationOpen{
+        display: flex;
+    }
+    .NavigationClose{
+        display: none;
+    }
 }
