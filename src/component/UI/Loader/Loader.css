@@ -1,8 +1,13 @@
+.CssloadBackGround{
+    width: 100vw;
+    height: 100vh;
+}
 .CssloadLoader {
     position: relative;
+    top: 40%;
     width: 100px;
     height: 100px;
-    margin: 130px auto;
+    margin: 0 auto;
     perspective: 780px;
 }
   
@@ -17,19 +22,19 @@
     left: 0%;
     top: 0%;
     animation: cssload-rotate-one 1.15s linear infinite;
-    border-bottom: 3px solid #5C5EDC;
+    border-bottom: 6px solid #5C5EDC;
 }
 .CssloadInner.Cssloadtwo {
     right: 0%;
     top: 0%;
     animation: cssload-rotate-two 1.15s linear infinite;
-    border-right: 3px solid rgba(76, 70, 101, 0.99);
+    border-right: 6px solid rgba(76, 70, 101, 0.99);
 }
 .CssloadInner.Cssloadthree {
     right: 0%;
     bottom: 0%;
     animation: cssload-rotate-three 1.15s linear infinite;
-    border-top: 3px solid #e9908a;
+    border-top: 6px solid #e9908a;
 }
   
 @keyframes cssload-rotate-one {

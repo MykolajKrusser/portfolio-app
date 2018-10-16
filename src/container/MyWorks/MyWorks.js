@@ -3,24 +3,26 @@ import axios from '../../axios';
 import classes from './MyWorks.css';
 import MyWorkItem from '../../component/MyWorkItem/MyWorkItem';
 import errorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import Loader from '../../component/UI/Loader/Loader';
 
 class MyWorks extends Component{
     state = {
-        works: []
+        works: [],
+        loading: true
     }
     
     componentDidMount(){
         axios.get('https://myportfolio-42a16.firebaseio.com/works/-LO9ND2xIDnY-oPX0GDp/works.json')
             .then(respons=>{
-                this.setState({works: respons.data})
+                this.setState({works: respons.data, loading: false})
             })
             .catch(error=>{
-                console.log(error)
+                this.setState({loading: false})
             });
     }
 
     render(){
-        const myWorksList = this.state.works.map(
+        let myWorksList = this.state.works.map(
             work => {
                 return <MyWorkItem
                     title={work.title}
@@ -33,6 +35,10 @@ class MyWorks extends Component{
                     key={work.id}/>
             }
         )
+
+        if (this.state.loading){
+            myWorksList= <Loader/>
+        }
 
         return(
             <section className={classes.Cols}>
