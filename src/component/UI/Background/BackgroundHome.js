@@ -8,14 +8,6 @@ const backgroundHome = (props)=>(
         <div className={classes.Waves}></div>
         <div className={classes.Waves}></div>
         <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
-        <div className={classes.Waves}></div>
     </div>
 );
 

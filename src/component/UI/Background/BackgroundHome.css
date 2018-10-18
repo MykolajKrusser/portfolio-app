@@ -37,54 +37,22 @@
 }
   
 .Waves:nth-child(5) {
-    left: 5%;
+    left: 10%;
     margin-top: 10px;
     animation-duration: 11s;
 }
   
 .Waves:nth-child(6) {
-    left: 10%;
+    left: 20%;
     animation-duration: 12s;
   }
   
 .Waves:nth-child(7) {
-    left: 15%;
-    margin-top: 10px;
-    animation-duration: 13s;
-}
-  
-.Waves:nth-child(8) {
-    left: 20%;
-    animation-duration: 5s;
-}
-  
-.Waves:nth-child(9) {
-    left: 25%;
-    margin-top: 10px;
-    animation-duration: 7s;
-}
-  
-.Waves:nth-child(10) {
     left: 30%;
-    animation-duration: 9s;
-}
-  
-.Waves:nth-child(11) {
-    left: 35%;
-    margin-top: 10px;
-    animation-duration: 11s;
-}
-  
-.Waves:nth-child(12) {
-    left: 40%;
-    animation-duration: 12s;
-}
-  
-.Waves:nth-child(13) {
-    left: 45%;
     margin-top: 10px;
     animation-duration: 13s;
 }
+
   
 @keyframes waves {
     from {
@@ -108,16 +76,13 @@
     .Waves:nth-child(4){
         transform: rotate(89deg);
     }
-    .Waves:nth-child(10){
+    .Waves:nth-child(5){
         transform: rotate(251deg);
     }
-    .Waves:nth-child(11){
+    .Waves:nth-child(6){
         transform: rotate(278deg);
     }
-    .Waves:nth-child(12){
+    .Waves:nth-child(7){
         transform: rotate(320deg);
-    }
-    .Waves:nth-child(13){
-        transform: rotate(350deg);
     }
 }
