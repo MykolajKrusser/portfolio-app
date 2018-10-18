@@ -9,7 +9,16 @@
     flex-direction: column;
     justify-content: center;
 }
-
+.AboutMe .Content {
+    width: 100%;
+    padding: 3%;
+    text-shadow:0px 1px 3px #ffffff;
+    background:none repeat 0 0 rgba(227, 222, 237, 0.75);
+}
+.AboutMe .Content article{
+    margin: 30px auto;
+    width: 80%;
+}
 @keyframes in {
     from {
         transform: translateX(-50%) scale(0.2) rotateY(130deg);
