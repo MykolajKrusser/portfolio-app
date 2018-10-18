@@ -1,0 +1,52 @@
+.MenuToggle {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+}
+  
+.MenuToggle input {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide input */
+    z-index: 1; /* top of the menu */
+}
+  
+.MenuToggle span{
+    width: 55px;
+    height: 8px;
+    margin-bottom: 10px;
+    background: #7f8fa6;
+    border-radius: 4px;
+    transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+  
+.Span1 {
+    transform-origin: 4px 0px;
+}
+  
+.Span3 {
+    transform-origin: bottom right;
+}
+  
+.Span1Active {
+    background-color: #0c2461;
+    transform: rotate(45deg) translate(13px, 17px);
+}
+.Span2Active  {
+    background-color: #0c2461;
+    transform: rotate(495deg) translate(4px);   
+}
+.Span3Active  {
+    background-color: #0c2461;
+    transform: rotate(45deg);
+    opacity: 0;
+}

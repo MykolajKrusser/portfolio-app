@@ -17,4 +17,4 @@ const menuBtn = (props)=>{
     );
 };
 
-export default menuBtn
+export default menuBtn;
