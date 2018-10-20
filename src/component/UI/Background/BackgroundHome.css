@@ -11,7 +11,7 @@
 .Waves {
     position: fixed;
     top: 0;
-    left: -15%;
+    left: -5%;
     animation: waves 3s infinite linear;
     border-radius: 30%;
     transform-origin: 50% 48%;
@@ -21,34 +21,34 @@
 }
   
 .Waves:nth-child(2) {
-    left: -10%;
+    left: 0%;
     animation-duration: 5s;
   }
   
 .Waves:nth-child(3) {
-    left: -5%;
+    left: 5%;
     margin-top: 10px;
     animation-duration: 7s;
 }
   
 .Waves:nth-child(4) {
-    left: 0%;
+    left: 10%;
     animation-duration: 9s;
 }
   
 .Waves:nth-child(5) {
-    left: 10%;
+    left: 20%;
     margin-top: 10px;
     animation-duration: 11s;
 }
   
 .Waves:nth-child(6) {
-    left: 20%;
+    left: 30%;
     animation-duration: 12s;
   }
   
 .Waves:nth-child(7) {
-    left: 30%;
+    left: 40%;
     margin-top: 10px;
     animation-duration: 13s;
 }
