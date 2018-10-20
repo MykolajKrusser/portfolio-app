@@ -20,7 +20,20 @@
     opacity: 1;
     transform: translateX(0);
 }
+
 .NavigationClose{
     opacity: 0;
     transform: translateX(200%);
+}
+
+@media screen and (max-width: 1024px){
+
+    .NavigationOpen{
+        display: flex;
+    }
+
+    .NavigationClose{
+        display: none;
+    }
+    
 }

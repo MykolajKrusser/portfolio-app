@@ -4,8 +4,9 @@ import NavigationItem from '../UI/NavigationItem/NavigationItem';
 import SocialsBlock from '../UI/SocialsBlock/SocialsBlock';
 
 const nav = (props) => {
-
+    
     const cssClasses = [classes.Navigation, props.navShow ? classes.NavigationOpen : classes.NavigationClose];
+    
     return(
         <nav
         className={cssClasses.join(' ')}
