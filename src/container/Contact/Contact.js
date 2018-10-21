@@ -51,15 +51,15 @@ class Contact extends Component{
                     <ul>
                         <li>
                             <label htmlFor="input">Your name</label>
-                            <input name="input" type="text" placeholder="Name" value={this.state.nameData} onChange={this.ChangeFormName}/>
+                            <input name="input" type="text" placeholder="Your name" value={this.state.nameData} onChange={this.ChangeFormName}/>
                         </li>
                         <li>
                             <label htmlFor="input">Your e-mail</label>
                             <input name="input" type="text" placeholder="e-mail" value={this.state.emailData} onChange={this.ChangeFormMail}/>
                         </li>
                         <li>
-                            <label htmlFor="textarea">Label</label>
-                            <textarea name="input" type="text" placeholder="Your messege" value={this.state.textData} onChange={this.ChangeFormText}/>
+                            <label htmlFor="textarea">Your message</label>
+                            <textarea name="input" type="text" placeholder="Your message" value={this.state.textData} onChange={this.ChangeFormText}/>
                         </li>
                     </ul>
                     <input type="submit" name="submit" value="Send e-mail" disabled={this.state.formSubmitBtnDisabled}/>
