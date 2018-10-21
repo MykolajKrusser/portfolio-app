@@ -42,18 +42,23 @@ form label {
     font-size: 0.95rem;
     font-weight: lighter;
 }
-form input[type="text"], textarea[type="text"]  {
+form input[type="text"], textarea[type="text"], input[type="email"]  {
     flex: 0 0 100%;
     width: 100%;
+    height: 40px;
     appearance: none;
     box-shadow: 0;
     border: 0;
     font-size: 0.85rem;
     line-height: 1.75;
     padding: 0 0.5rem;
+    border-radius: 30px;
 }
-form textarea{
-    height: 8rem;
+form textarea[type="text"]{
+    width: 100%;
+    height: 160px;
+    border-radius: 30px;
+    padding-top: 15px;
 }
 form input[type="submit"] {
     appearance: none;
