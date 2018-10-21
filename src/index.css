@@ -20,13 +20,13 @@ h1,h2,h3{
   font-size: 32px;
 }
 
-article,p{
+article,p,label,input,textarea{
   font-family: 'Niramit', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-a{
+input[type="submit"], a{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 22px;

@@ -9,7 +9,7 @@ const homePage = (props)=>(
             <h1>Hello, my name is Mykolaj Krusser</h1>
             <article>
                 <p>
-                    And I am a creative front‑end developer
+                    And I am a front‑end developer
                 </p>
                 <p>
                     Engaged in the creation of modern WEB SITES and WEB APPLICATIONS.
