@@ -20,7 +20,7 @@ class Contact extends Component{
 
     changeFormMail = (event) => {
         this.setState({emailData: event.target.value});
-        const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{1,6})+$/;
+        const reg = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{1,8})+$/;
         if (reg.test(this.state.emailData) === true) {
             this.setState({formSubmitBtnDisabled: false});
         }
