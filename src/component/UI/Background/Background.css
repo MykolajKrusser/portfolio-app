@@ -1,7 +1,7 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: radial-gradient(1400px at 75% 0%, rgba(120, 144, 156, 1), rgba(227, 244, 253, 1));
+    background: radial-gradient(1400px at 75% 0%, rgb(0, 145, 218), rgb(0, 47, 255));
     position: absolute;
     width: inherit;
     height: inherit;
@@ -11,18 +11,18 @@
   
 @keyframes blink {
     0% {
-        border: 0px solid rgba(236, 239, 241, .6);
-        background: rgba(96, 125, 139, .6);
+        border: 0px solid rgba(55, 248, 48, 0.562);
+        background: rgba(3, 211, 107, 0.6);
         transform: rotate(0deg) scale(0.25);
     }
     25% {
-        border: 200px solid rgba(236, 239, 241, .6);
-        background: rgba(96, 125, 139, .6);
+        border: 200px solid rgba(151, 252, 20, 0.692);
+        background: rgba(0, 158, 236, 0.6);
         transform: rotate(360deg) scale(1) skew(5deg);
     }
     100% {
-        border: 0px solid rgba(236, 239, 241, .6);
-        background: rgba(96, 125, 139, .6);
+        border: 0px solid rgba(1, 230, 218, 0.507);
+        background: rgba(0, 144, 216, 0.582);
         transform: rotate(0deg) scale(0.25);
     }
 }
@@ -31,7 +31,7 @@
     width: 800px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 0px 0px 65px 14px rgba(96, 125, 139, .5);
+    box-shadow: 0px 0px 65px 14px rgba(0, 116, 173, 0.5);
     top: -360px;
     right: -222px;
     transform-origin: 75% 50%;
@@ -54,19 +54,19 @@
     .Circle {
         animation: none;
         transform: rotate(360deg) scale(0.25) skew(0deg);
-        border: 25px solid rgba(236, 239, 241, .6);
+        border: 25px solid rgba(247, 48, 247, 0.562);
     }
       
     .Circle:nth-child(2) {
         animation: none;
         transform: rotate(360deg) scale(0.5) skew(5deg);
-        border: 100px solid rgba(236, 239, 241, .6);
+        border: 100px solid rgba(159, 20, 252, 0.521);
     }
       
     .Circle:nth-child(3) {
         animation: none;
         transform: rotate(360deg) scale(1) skew(10deg);
-        border: 200px solid rgba(236, 239, 241, .6);
+        border: 200px solid rgba(1, 230, 218, 0.507);
     }
     
 }

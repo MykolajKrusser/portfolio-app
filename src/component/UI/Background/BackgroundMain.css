@@ -1,7 +1,7 @@
 .Background {
     height: 100%;
     width: 100%;
-    background: linear-gradient(135deg, #bbbbbb 15%,#c7d0cb 37%,#c7d0cb 37%,#cecece 64%,#bbbbbb 79%); 
+    background: linear-gradient(135deg, #57a0ff 1%,#68bafd 17%,#61faff 50%,#3ef0fd 58%,#02fcc6 86%); 
     position: absolute;
     z-index: -1;
     filter: blur(1px);

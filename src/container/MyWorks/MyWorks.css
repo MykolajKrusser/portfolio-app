@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: in 3s ease-in;
+    animation: in 2s ease-in;
     background: linear-gradient(45deg,  #cedce7 1%,#596a72 100%);
 }
 
 @keyframes in {
     from {
-        transform: translateY(-50%) scale(0.2);
+        transform: translateY(-50%) scale(0.7);
         opacity: 0;
     }
     to {

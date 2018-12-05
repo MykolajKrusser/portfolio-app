@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%; 
     z-index: 1;
-    animation: in 3s;
+    animation: in 2s linear;
     text-align: center;
     box-sizing: border-box;
     display: flex;

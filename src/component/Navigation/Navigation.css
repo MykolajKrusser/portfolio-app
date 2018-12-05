@@ -11,7 +11,7 @@
     align-items: center;
     box-sizing: border-box;
     transition: all 1s ease-out;
-    background: rgba(96, 125, 139, 0.95);
+    background: rgba(148, 148, 148, 0.466);
     box-shadow: inset 0px 0px 40px 7px rgba(255, 255, 255, 0.41);
     z-index: 888;
 }
