@@ -3,7 +3,14 @@
     flex-wrap: wrap;
     justify-content: center;
     animation: in 2s ease-in;
-    background: linear-gradient(45deg,  #cedce7 1%,#596a72 100%);
+    background: linear-gradient(45deg,  #4061f7 1%,#45a2f8 100%);
+}
+.Cols section:nth-child(2n){
+    flex-direction: row-reverse;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(45deg,  #ff8e23 1%,#af1f1fbb 100%);
+    clip-path: polygon(0 0,100% 10%,100% 100%,0 90%);
 }
 
 @keyframes in {
@@ -26,8 +33,14 @@
     }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 960px){
     .Cols{
         animation: inMob 2s;
+    }
+}
+
+@media screen and (max-width: 32rem){
+    .Cols section:nth-child(2n){
+        clip-path: polygon(0 0,100% 2%,100% 100%,0 98%);
     }
 }

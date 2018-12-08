@@ -32,6 +32,7 @@ class MyWorks extends Component{
                     git={work.git}
                     live={work.live}
                     background={work.background}
+                    background2={work.background2}
                     key={work.id}/>
             }
         )

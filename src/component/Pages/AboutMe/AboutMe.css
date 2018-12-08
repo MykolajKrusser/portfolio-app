@@ -12,7 +12,7 @@
 .AboutMe .Content {
     width: 60%;
     min-height: 70%;
-    border-radius: 50%;
+    border-radius: 1%;
     padding: 3%;
     text-shadow:0px 2px 4px rgba(175, 250, 132, 0.534);
     background:none repeat 0 0 rgba(132, 232, 250, 0.534);
