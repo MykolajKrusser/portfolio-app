@@ -26,6 +26,13 @@
     transform: translateX(200%);
 }
 
+.Footer{
+    bottom: 12px;
+    right: 12px;
+    position: fixed;
+    color: white;
+}
+
 @media screen and (max-width: 1024px){
 
     .NavigationOpen{
