@@ -5,7 +5,7 @@
     transform-style: preserve-3d;
     perspective: 1000px;
     transform-origin: center center;
-    margin: 25px;
+    margin: 15px;
 }
 .BtnflipItem {
     position: absolute;

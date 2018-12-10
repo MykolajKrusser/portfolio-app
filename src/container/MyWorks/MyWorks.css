@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1024px){
     .Cols{
         animation: inMob 2s;
     }
@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (max-height: 768px){
+@media screen and (max-height: 460px){
     .Cols section:nth-child(2n){
         flex-direction: row-reverse;
     }
