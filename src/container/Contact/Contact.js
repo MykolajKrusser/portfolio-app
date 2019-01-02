@@ -80,7 +80,7 @@ class Contact extends Component{
                         </li>
                         <li>
                             <label htmlFor="input">Your e-mail</label>
-                            <input title="Enter Your e-mail" name="input" type="email" placeholder="e-mail" required value={this.state.emailData} onChange={this.changeFormMail}/>
+                            <input title="Enter Your e-mail" name="input" type="email" placeholder="Your e-mail" required value={this.state.emailData} onChange={this.changeFormMail}/>
                         </li>
                         <li>
                             <label htmlFor="textarea">Your message</label>

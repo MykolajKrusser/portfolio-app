@@ -103,6 +103,12 @@
 .Inner div a{
     margin: 0 15px;
 }
+.Title{
+    background: rgba(82, 92, 99, 0.637);
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+}
   
 .Container .Back{
     transform: rotateY(180deg);

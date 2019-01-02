@@ -1,10 +1,8 @@
 .Background {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background: radial-gradient(1400px at 75% 0%, rgb(0, 145, 218), rgb(0, 47, 255));
     position: absolute;
-    width: inherit;
-    height: inherit;
     overflow: hidden;
     z-index: -1;
 }
@@ -51,6 +49,10 @@
 }
 
 @media screen and (max-width: 1024px){
+    .Background{
+        position: fixed;
+        top: 0;
+    }
     .Circle {
         animation: none;
         transform: rotate(360deg) scale(0.25) skew(0deg);

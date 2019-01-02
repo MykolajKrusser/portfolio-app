@@ -8,7 +8,7 @@ const mywork = (props)=>(
             <div className={classes.Container}>
                 <div className={classes.Front} style={{backgroundImage: "url(" + props.background + ")"}}>
                     <div className={classes.Inner}>
-                        <h2>{props.title}</h2>
+                        <h2 className={classes.Title}>{props.title}</h2>
                     </div>
                 </div>
                 <div className={classes.Back} style={{backgroundImage: "url(" + props.background2 + ")"}}>

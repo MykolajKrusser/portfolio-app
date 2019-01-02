@@ -4,6 +4,7 @@ import classes from './MyWorks.css';
 import MyWorkItem from '../../component/MyWorkItem/MyWorkItem';
 import errorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import Loader from '../../component/UI/Loader/Loader';
+import NavigationItem from '../../component/UI/NavigationItem/NavigationItem';
 
 class MyWorks extends Component{
     state = {
@@ -44,6 +45,7 @@ class MyWorks extends Component{
         return(
             <section className={classes.Cols}>
                 {myWorksList}
+                <NavigationItem link='/contact'>Contact Me</NavigationItem>
             </section>
         );
     }
